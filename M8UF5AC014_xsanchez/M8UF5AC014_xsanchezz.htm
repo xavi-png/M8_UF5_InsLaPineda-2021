@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulari 1 d'enregistramen</title>
+</head>
+<body style="background-color: rgb(150, 220, 230);
+                    font-family:Arial;
+                    width: 60%;
+                    margin-left: auto;
+                    margin-right: auto;">
+
+    <h1 align=""center>Formulari bàsic de registre</h1>
+    <form action="" method="GET"> 
+        <fieldset>
+    <hr>
+<!--Nombre y apellido-->
+<hr>
+    <label for="Nombre">Nombre:</label>
+    <input type="text" name="nom" id="nombre" maxlength="50"><br>
+    <label for="Apellido">Apellido:</label>
+    <input type="text" name="apellido" id="apellido" maxlenght="50"><br>
+<hr>
+<!--Sexe-->
+    <label for="Sexe">Seleccione su sexo:</label><br>
+    <input type="radio" name="sex" id="hombre" value="Hombre">Hombre<br>
+    <input type="radio" name="sex" id="dona" value="Dona">Dona<br>
+<!--Correu electronic-->
+<hr>
+<label for="correu">Correu electronic:</label>
+<input type="mail" name="mail" id="mail" value="@"><br>
+<hr>
+<!--POBLACIO-->
+<label for="poblacio">Poblacio:</label>
+            <select>
+                <option value="Badalona">Badalona</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Arbucies">Arbucies</option>
+                <option value="Girona">Girona</option>
+                <option value="Vilasar de amr">Vilasar de mas</option>
+            </select>
+<!--Descripcio-->
+<hr>
+<textarea name="descripcio" id="descripcio" cols="60" rows="10"></textarea>
+<hr>
+<!--Casillas-->
+<input type="checkbox" name="box1" id="box1">Vull rebre informació sobre novetats i ofertes <br>
+<input type="checkbox" name="box1" id="box1">Declaro   haver   llegit   i   acceptar   les
+condicions generals del programa i la normativa sobre protecció de dades indicada
+al RGPD
+<hr>
+<!--Enviar-->
+<input type="button" name="enviar" id="enviar" value="Enviar">
+</fieldset>
+</form>
+</body>
+</html>
